@@ -30,7 +30,19 @@
             font-size: 18px; /* Adjust font size for section names */
         }
 
-
+        /* Responsive CSS using media queries */
+        @media only screen and (max-width: 600px) {
+            body {
+                margin: 0.5cm; /* Adjust margin for smaller screens */
+            }
+            .nav-container {
+                text-align: center; /* Center align navigation links */
+            }
+            .nav-container a {
+                display: block; /* Make navigation links block-level for stacking */
+                margin-right: 0; /* Remove right margin */
+            }
+        }
     </style>
 </head>
 
@@ -41,7 +53,6 @@
             <p></p>
         </section>
 
-
         <div class="nav-container">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
@@ -50,8 +61,6 @@
             <a href="contact.html">Contact</a>
         </div>
 
-
-        
         <section id="about">
             <h2>About</h2>
             <p>The Oil Price Uncertainty (OPU) index, developed by Abdul Abiad and Irfan A. Qureshi in their 2023 article “The Macroeconomic Effects of Oil Price Uncertainty”, serves as a measure of economic uncertainty stemming from oil prices. The index is constructed based on frequency counts of English-language newspaper articles published worldwide between January 1969 and December 2019.</p>
@@ -61,36 +70,24 @@
             <p>For each newspaper and month, occurrences of the specified keywords and phrases are counted and scaled by the number of articles. The resulting counts are standardized to have a unit standard deviation from 1969 to 2019. The newspaper-level series are then averaged by month, and the average OPU index value is normalized to a mean of 100 from 1969 to 2019.</p>
             
             <figure>
-               <img src="https://raw.githubusercontent.com/aris-zoleta/opuindex.github.io/master/OPU.jpg" alt="OPU Image">
-
-                <figcaption> Note: Based on authors calculation of OPU index from Sept 1969- March 2024</figcaption>
-                
+                <img src="https://raw.githubusercontent.com/aris-zoleta/opuindex.github.io/master/OPU.jpg" alt="OPU Image">
+                <figcaption>Note: Based on authors calculation of OPU index from Sept 1969- March 2024</figcaption>
             </figure>
-
-            
         </section>
 
         <section id="Citation">
             <h2>Citation</h2>
             <p>Please use the below citation</p>
             <p>Abiad, A., & Qureshi, I. A. (2023). The macroeconomic effects of oil price uncertainty. Energy Economics, 125, 106839. https://doi.org/10.1016/j.eneco.2023.106839
-</p>
+            </p>
             <a href="https://www.sciencedirect.com/science/article/abs/pii/S0140988323003377">Full Paper Download</a>
-
         </section>
       
         <section id="Download">
             <h2>Download</h2>
-            <p>For the latest OPU Index. Please click <a href="https://raw.githubusercontent.com/aris-zoleta/opuindex.github.io/master/OPU%20Index.csv"> Download</a>
- </p>
-            
+            <p>For the latest OPU Index. Please click <a href="https://raw.githubusercontent.com/aris-zoleta/opuindex.github.io/master/OPU%20Index.csv">Download</a></p>
         </section>
-
     </main>
 
     <footer>
-        <p> Disclaimer: Views expressed on this site are solely the author's and do not reflect those of the others</p>
-    </footer>
-
-</body>
-</html>
+        <p>Disclaimer: Views expressed on this site
