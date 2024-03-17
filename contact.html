@@ -30,7 +30,19 @@
             font-size: 18px; /* Adjust font size for section names */
         }
 
-
+        /* Responsive CSS using media queries */
+        @media only screen and (max-width: 600px) {
+            body {
+                margin: 0.5cm; /* Adjust margin for smaller screens */
+            }
+            .nav-container {
+                text-align: center; /* Center align navigation links */
+            }
+            .nav-container a {
+                display: block; /* Make navigation links block-level for stacking */
+                margin-right: 0; /* Remove right margin */
+            }
+        }
     </style>
 </head>
 
@@ -40,7 +52,6 @@
             <h2>Oil Price Uncertainty (OPU) Index</h2>
             <p></p>
         </section>
-
 
         <div class="nav-container">
             <a href="index.html">Home</a>
